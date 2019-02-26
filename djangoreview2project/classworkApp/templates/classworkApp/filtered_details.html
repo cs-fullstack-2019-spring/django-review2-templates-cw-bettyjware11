@@ -1,0 +1,22 @@
+{% extends 'classworkApp/songs.html' %}
+
+{% block content %}
+<table class="table">
+    <tr>
+        <td>Album:</td>
+        <td>{{current_song.song_album}}</td>
+    </tr>
+
+    <tr>
+        <td>Lyrics:</td>
+        <td>{{current_song.song_lyrics}}</td>
+    </tr>
+
+    <tr>
+        <td>Audio:</td>
+        <td>{{current_song.song_audio}}</td>
+    </tr>
+</table>
+<br>
+<a href="{% url 'songs' %}">Back to Main Song Page</a>
+{% endblock %}}
